@@ -1,9 +1,9 @@
-import { Routes, Route } from 'react-router-dom'
-import { CartProvider } from './context/CartContext'
-import Header from './components/Header'
-import AnimatedBanner from './components/AnimatedBanner'
-import HomePage from './pages/HomePage'
-import CartPage from './pages/CartPage'
+import { Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
+import Header from "./components/Header";
+import AnimatedBanner from "./components/AnimatedBanner";
+import HomePage from "./pages/HomePage";
+import CartPage from "./pages/CartPage";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         </Routes>
       </div>
     </CartProvider>
-  )
+  );
 }
 
-export default App
+export default App;

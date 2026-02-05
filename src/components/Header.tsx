@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom'
-import { ShoppingCart, Menu, X } from 'lucide-react'
-import { useState } from 'react'
-import { useCart } from '../context/CartContext'
+import { Link } from "react-router-dom";
+import { ShoppingCart, Menu, X } from "lucide-react";
+import { useState } from "react";
+import { useCart } from "../context/CartContext";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
-  const { items } = useCart()
-  const cartCount = items.length
+  const [isOpen, setIsOpen] = useState(false);
+  const { items } = useCart();
+  const cartCount = items.length;
 
   return (
     <header className="sticky top-0 z-50 bg-neutral-900 border-b border-neutral-700 backdrop-blur-sm bg-opacity-95">
@@ -17,18 +17,29 @@ export default function Header() {
             <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center shadow-lg shadow-primary-500/50">
               <span className="text-neutral-900 font-bold text-sm">CC</span>
             </div>
-            <span className="font-bold text-lg bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent hidden sm:inline">Clg Cart</span>
+            <span className="font-bold text-lg bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent hidden sm:inline">
+              Clg Cart
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link to="/" className="text-neutral-300 hover:text-primary-400 transition-colors font-medium">
+            <Link
+              to="/"
+              className="text-neutral-300 hover:text-primary-400 transition-colors font-medium"
+            >
               Shop
             </Link>
-            <a href="#bestsellers" className="text-neutral-300 hover:text-primary-400 transition-colors font-medium">
+            <a
+              href="#bestsellers"
+              className="text-neutral-300 hover:text-primary-400 transition-colors font-medium"
+            >
               Bestsellers
             </a>
-            <a href="#sale" className="text-neutral-300 hover:text-primary-400 transition-colors font-medium">
+            <a
+              href="#sale"
+              className="text-neutral-300 hover:text-primary-400 transition-colors font-medium"
+            >
               Sale
             </a>
           </nav>
@@ -44,7 +55,9 @@ export default function Header() {
                 {cartCount}
               </span>
             )}
-            <span className="hidden sm:inline text-sm font-medium text-neutral-50">Cart</span>
+            <span className="hidden sm:inline text-sm font-medium text-neutral-50">
+              Cart
+            </span>
           </Link>
 
           {/* Mobile Menu Button */}
@@ -59,18 +72,27 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isOpen && (
           <nav className="md:hidden pb-4 flex flex-col gap-3">
-            <Link to="/" className="block px-4 py-2 text-neutral-300 hover:text-primary-400 hover:bg-neutral-700 rounded-lg transition-colors">
+            <Link
+              to="/"
+              className="block px-4 py-2 text-neutral-300 hover:text-primary-400 hover:bg-neutral-700 rounded-lg transition-colors"
+            >
               Shop
             </Link>
-            <a href="#bestsellers" className="block px-4 py-2 text-neutral-300 hover:text-primary-400 hover:bg-neutral-700 rounded-lg transition-colors">
+            <a
+              href="#bestsellers"
+              className="block px-4 py-2 text-neutral-300 hover:text-primary-400 hover:bg-neutral-700 rounded-lg transition-colors"
+            >
               Bestsellers
             </a>
-            <a href="#sale" className="block px-4 py-2 text-neutral-300 hover:text-primary-400 hover:bg-neutral-700 rounded-lg transition-colors">
+            <a
+              href="#sale"
+              className="block px-4 py-2 text-neutral-300 hover:text-primary-400 hover:bg-neutral-700 rounded-lg transition-colors"
+            >
               Sale
             </a>
           </nav>
         )}
       </div>
     </header>
-  )
+  );
 }

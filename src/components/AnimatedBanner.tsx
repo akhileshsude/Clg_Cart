@@ -1,4 +1,4 @@
-import { Zap } from 'lucide-react'
+import { Zap } from "lucide-react";
 
 export default function AnimatedBanner() {
   return (
@@ -8,15 +8,21 @@ export default function AnimatedBanner() {
         <div className="flex items-center gap-3 whitespace-nowrap animate-slide-banner">
           <div className="flex items-center gap-2">
             <Zap size={18} className="text-neutral-900" />
-            <span className="font-bold text-neutral-900">⚡ LIMITED TIME OFFER: 30% OFF on Hoodies!</span>
+            <span className="font-bold text-neutral-900">
+              ⚡ LIMITED TIME OFFER: 30% OFF on Hoodies!
+            </span>
           </div>
           <div className="flex items-center gap-2">
             <Zap size={18} className="text-neutral-900" />
-            <span className="font-bold text-neutral-900">📦 FREE Shipping on Orders Above ₹999!</span>
+            <span className="font-bold text-neutral-900">
+              📦 FREE Shipping on Orders Above ₹999!
+            </span>
           </div>
           <div className="flex items-center gap-2">
             <Zap size={18} className="text-neutral-900" />
-            <span className="font-bold text-neutral-900">🎁 Exclusive Deals for New Customers!</span>
+            <span className="font-bold text-neutral-900">
+              🎁 Exclusive Deals for New Customers!
+            </span>
           </div>
         </div>
 
@@ -24,18 +30,24 @@ export default function AnimatedBanner() {
         <div className="flex items-center gap-3 whitespace-nowrap animate-slide-banner">
           <div className="flex items-center gap-2">
             <Zap size={18} className="text-neutral-900" />
-            <span className="font-bold text-neutral-900">⚡ LIMITED TIME OFFER: 30% OFF on Hoodies!</span>
+            <span className="font-bold text-neutral-900">
+              ⚡ LIMITED TIME OFFER: 30% OFF on Hoodies!
+            </span>
           </div>
           <div className="flex items-center gap-2">
             <Zap size={18} className="text-neutral-900" />
-            <span className="font-bold text-neutral-900">📦 FREE Shipping on Orders Above ₹999!</span>
+            <span className="font-bold text-neutral-900">
+              📦 FREE Shipping on Orders Above ₹999!
+            </span>
           </div>
           <div className="flex items-center gap-2">
             <Zap size={18} className="text-neutral-900" />
-            <span className="font-bold text-neutral-900">🎁 Exclusive Deals for New Customers!</span>
+            <span className="font-bold text-neutral-900">
+              🎁 Exclusive Deals for New Customers!
+            </span>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
