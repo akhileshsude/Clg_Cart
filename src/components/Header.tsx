@@ -49,7 +49,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 hover:bg-neutral-100 rounded-lg transition-colors"
+            className="md:hidden p-2 hover:bg-neutral-700 rounded-lg transition-colors text-neutral-300"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -59,13 +59,13 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isOpen && (
           <nav className="md:hidden pb-4 flex flex-col gap-3">
-            <Link to="/" className="block px-4 py-2 text-neutral-700 hover:text-primary-600 hover:bg-neutral-50 rounded-lg transition-colors">
+            <Link to="/" className="block px-4 py-2 text-neutral-300 hover:text-primary-400 hover:bg-neutral-700 rounded-lg transition-colors">
               Shop
             </Link>
-            <a href="#bestsellers" className="block px-4 py-2 text-neutral-700 hover:text-primary-600 hover:bg-neutral-50 rounded-lg transition-colors">
+            <a href="#bestsellers" className="block px-4 py-2 text-neutral-300 hover:text-primary-400 hover:bg-neutral-700 rounded-lg transition-colors">
               Bestsellers
             </a>
-            <a href="#sale" className="block px-4 py-2 text-neutral-700 hover:text-primary-600 hover:bg-neutral-50 rounded-lg transition-colors">
+            <a href="#sale" className="block px-4 py-2 text-neutral-300 hover:text-primary-400 hover:bg-neutral-700 rounded-lg transition-colors">
               Sale
             </a>
           </nav>
