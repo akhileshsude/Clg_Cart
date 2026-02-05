@@ -243,9 +243,9 @@ export default function HomePage() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-secondary-500/10 rounded-full blur-3xl animate-pulse"></div>
         </div>
         <div className="container-main relative z-10">
-          <div className="mb-12">
+          <div className="mb-12 animate-fade-in-up">
             <div className="flex items-center gap-2 mb-3">
-              <Flame size={20} className="text-secondary-400" />
+              <Flame size={20} className="text-secondary-400 animate-pulse-glow" />
               <span className="text-sm font-bold text-secondary-400 uppercase tracking-wide">Flash Sale</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-secondary-300 to-secondary-500 bg-clip-text text-transparent mb-3">Limited Time Offers</h2>
