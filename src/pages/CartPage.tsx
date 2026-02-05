@@ -6,15 +6,15 @@ export default function CartPage() {
   const { items, removeFromCart, updateQuantity, clearCart, cartTotal } = useCart()
 
   return (
-    <main className="min-h-[calc(100vh-80px)] bg-neutral-50">
+    <main className="min-h-[calc(100vh-80px)] bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
       <div className="container-main py-12">
         {/* Header */}
         <div className="mb-8">
-          <Link to="/" className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-4 transition-colors">
+          <Link to="/" className="inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 mb-4 transition-colors">
             <ArrowLeft size={18} />
             Continue Shopping
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold text-neutral-900">Shopping Cart</h1>
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-300 to-primary-500 bg-clip-text text-transparent">Shopping Cart</h1>
         </div>
 
         {items.length === 0 ? (
