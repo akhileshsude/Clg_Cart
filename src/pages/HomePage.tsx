@@ -2,33 +2,33 @@ import { ArrowRight, Flame, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 
-// Mock product data
+// Mock product data - Indian pricing in Rupees
 const bestsellers = [
   {
     id: 'best-1',
     name: 'Classic College Hoodie',
-    price: 54.99,
+    price: 2499,
     image: 'https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=400&h=400&fit=crop',
     category: 'Hoodies',
   },
   {
     id: 'best-2',
     name: 'Vintage Campus Tee',
-    price: 24.99,
+    price: 799,
     image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop',
     category: 'T-Shirts',
   },
   {
     id: 'best-3',
     name: 'College Logo Cap',
-    price: 29.99,
+    price: 899,
     image: 'https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=400&h=400&fit=crop',
     category: 'Accessories',
   },
   {
     id: 'best-4',
     name: 'Branded Backpack',
-    price: 79.99,
+    price: 2999,
     image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop',
     category: 'Accessories',
   },
@@ -38,7 +38,7 @@ const limitedSale = [
   {
     id: 'sale-1',
     name: 'Premium Zip Hoodie',
-    price: 44.99,
+    price: 1999,
     image: 'https://images.unsplash.com/photo-1516216129205-e5adf2e4aaef?w=400&h=400&fit=crop',
     category: 'Hoodies',
     badge: '30% OFF',
@@ -46,7 +46,7 @@ const limitedSale = [
   {
     id: 'sale-2',
     name: 'Campus Crew Neck',
-    price: 19.99,
+    price: 599,
     image: 'https://images.unsplash.com/photo-1503217010910-5051a0cf4af7?w=400&h=400&fit=crop',
     category: 'T-Shirts',
     badge: '50% OFF',
@@ -54,7 +54,7 @@ const limitedSale = [
   {
     id: 'sale-3',
     name: 'College Sweatpants',
-    price: 39.99,
+    price: 1599,
     image: 'https://images.unsplash.com/photo-1552062407-291a15f0f5b7?w=400&h=400&fit=crop',
     category: 'Clothing',
     badge: '35% OFF',
@@ -62,7 +62,7 @@ const limitedSale = [
   {
     id: 'sale-4',
     name: 'Branded Water Bottle',
-    price: 24.99,
+    price: 799,
     image: 'https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=400&h=400&fit=crop',
     category: 'Accessories',
     badge: 'LIMITED',
@@ -73,28 +73,28 @@ const clothing = [
   {
     id: 'cloth-1',
     name: 'Oversized College Tee',
-    price: 32.99,
+    price: 1299,
     image: 'https://images.unsplash.com/photo-1492707892657-8a91e128a5b8?w=400&h=400&fit=crop',
     category: 'T-Shirts',
   },
   {
     id: 'cloth-2',
     name: 'Classic Hoodie',
-    price: 59.99,
+    price: 2699,
     image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=400&fit=crop',
     category: 'Hoodies',
   },
   {
     id: 'cloth-3',
     name: 'Fleece Jacket',
-    price: 74.99,
+    price: 3299,
     image: 'https://images.unsplash.com/photo-1491841573634-28fb1d3a814d?w=400&h=400&fit=crop',
     category: 'Jackets',
   },
   {
     id: 'cloth-4',
     name: 'Joggers',
-    price: 45.99,
+    price: 1899,
     image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=400&fit=crop',
     category: 'Bottoms',
   },
@@ -104,28 +104,28 @@ const accessories = [
   {
     id: 'acc-1',
     name: 'Beanie Collection',
-    price: 22.99,
+    price: 699,
     image: 'https://images.unsplash.com/photo-1575428774223-a1f0b0acac04?w=400&h=400&fit=crop',
     category: 'Accessories',
   },
   {
     id: 'acc-2',
     name: 'Socks Pack (5 pairs)',
-    price: 19.99,
+    price: 499,
     image: 'https://images.unsplash.com/photo-1550990192-8b3f5b5b5b5b?w=400&h=400&fit=crop',
     category: 'Accessories',
   },
   {
     id: 'acc-3',
     name: 'Campus Tote Bag',
-    price: 34.99,
+    price: 1299,
     image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=400&fit=crop',
     category: 'Bags',
   },
   {
     id: 'acc-4',
     name: 'Phone Case',
-    price: 16.99,
+    price: 599,
     image: 'https://images.unsplash.com/photo-1519738265434-c26b3d09e071?w=400&h=400&fit=crop',
     category: 'Tech',
   },
@@ -135,28 +135,28 @@ const stationery = [
   {
     id: 'stat-1',
     name: 'College Notebook Set',
-    price: 14.99,
+    price: 399,
     image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=400&fit=crop',
     category: 'Stationery',
   },
   {
     id: 'stat-2',
     name: 'Branded Pen Pack',
-    price: 9.99,
+    price: 299,
     image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=400&fit=crop',
     category: 'Stationery',
   },
   {
     id: 'stat-3',
     name: 'Desk Organizer',
-    price: 29.99,
+    price: 999,
     image: 'https://images.unsplash.com/photo-1548690596-5ea266ca1b7b?w=400&h=400&fit=crop',
     category: 'Stationery',
   },
   {
     id: 'stat-4',
     name: 'Study Planner',
-    price: 19.99,
+    price: 699,
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
     category: 'Stationery',
   },
