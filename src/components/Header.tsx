@@ -9,7 +9,7 @@ export default function Header() {
   const cartCount = items.length
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-neutral-200">
+    <header className="sticky top-0 z-50 bg-neutral-900 border-b border-neutral-700 backdrop-blur-sm bg-opacity-95">
       <div className="container-main">
         <div className="flex items-center justify-between py-4 md:py-5">
           {/* Logo */}
