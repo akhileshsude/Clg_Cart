@@ -48,7 +48,7 @@ export default function CartPage() {
             {/* Cart Items */}
             <div className="lg:col-span-2">
               <div className="card">
-                <div className="divide-y divide-neutral-200">
+                <div className="divide-y divide-neutral-700">
                   {items.map((item) => (
                     <div key={item.id} className="p-4 md:p-6 flex gap-4 md:gap-6">
                       {/* Product Image */}
