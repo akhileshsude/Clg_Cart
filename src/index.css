@@ -43,11 +43,11 @@ body {
 }
 
 .btn-secondary {
-  @apply px-6 py-3 bg-neutral-200 text-neutral-900 rounded-lg font-medium transition-all hover:bg-neutral-300 active:scale-95;
+  @apply px-6 py-3 bg-neutral-700 text-neutral-50 rounded-lg font-medium transition-all hover:bg-neutral-600 active:scale-95 border border-neutral-600;
 }
 
 .btn-ghost {
-  @apply px-4 py-2 text-neutral-700 hover:bg-neutral-100 rounded-lg transition-all active:scale-95;
+  @apply px-4 py-2 text-neutral-300 hover:bg-neutral-700 rounded-lg transition-all active:scale-95;
 }
 
 .card {
