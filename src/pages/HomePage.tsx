@@ -176,36 +176,36 @@ export default function HomePage() {
         <div className="container-main relative z-10">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Hero Text */}
-            <div>
+            <div className="animate-slide-in-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 text-balance bg-gradient-to-r from-primary-300 to-primary-500 bg-clip-text text-transparent">
                 Your College Style Starts Here
               </h1>
-              <p className="text-lg md:text-xl text-neutral-300 mb-8 text-balance">
+              <p className="text-lg md:text-xl text-neutral-300 mb-8 text-balance animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                 Premium hoodies, tees, and accessories designed for tech-savvy college students. Express your campus pride with quality merch.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="#bestsellers" className="btn-primary bg-gradient-to-r from-primary-500 to-primary-600 text-neutral-900 hover:from-primary-400 hover:to-primary-500 shadow-lg shadow-primary-500/50 flex items-center justify-center gap-2">
+              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                <Link to="#bestsellers" className="btn-primary bg-gradient-to-r from-primary-500 to-primary-600 text-neutral-900 hover:from-primary-400 hover:to-primary-500 shadow-lg shadow-primary-500/50 hover:shadow-xl hover:shadow-primary-500/70 flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105">
                   Shop Now
-                  <ArrowRight size={18} />
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <a href="#sale" className="btn-secondary bg-secondary-600/20 text-secondary-300 border-secondary-500/50 hover:bg-secondary-600/30 flex items-center justify-center gap-2">
+                <a href="#sale" className="btn-secondary bg-secondary-600/20 text-secondary-300 border-secondary-500/50 hover:bg-secondary-600/30 flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105">
                   View Sale
-                  <Flame size={18} />
+                  <Flame size={18} className="animate-pulse-glow" />
                 </a>
               </div>
             </div>
 
             {/* Hero Image */}
-            <div className="hidden md:block">
+            <div className="hidden md:block animate-slide-in-right">
               <div className="relative">
-                <div className="bg-gradient-to-br from-primary-500/20 to-secondary-600/20 rounded-3xl overflow-hidden aspect-square border border-primary-500/30 shadow-2xl shadow-primary-500/20 backdrop-blur-sm">
+                <div className="bg-gradient-to-br from-primary-500/20 to-secondary-600/20 rounded-3xl overflow-hidden aspect-square border border-primary-500/30 shadow-2xl shadow-primary-500/20 backdrop-blur-sm hover:shadow-primary-500/40 transition-shadow duration-300 animate-float">
                   <img
                     src="https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=600&h=600&fit=crop"
                     alt="College Hoodie"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl px-6 py-3 shadow-xl shadow-primary-500/50 border border-primary-400/50">
+                <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl px-6 py-3 shadow-xl shadow-primary-500/50 border border-primary-400/50 animate-bounce-soft">
                   <p className="font-bold text-lg text-neutral-900">30% OFF</p>
                   <p className="text-sm text-neutral-800">Limited Time</p>
                 </div>
