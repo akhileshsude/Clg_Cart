@@ -52,7 +52,7 @@ export default function CartPage() {
                   {items.map((item) => (
                     <div key={item.id} className="p-4 md:p-6 flex gap-4 md:gap-6">
                       {/* Product Image */}
-                      <div className="w-20 h-20 md:w-24 md:h-24 bg-neutral-100 rounded-lg overflow-hidden flex-shrink-0">
+                      <div className="w-20 h-20 md:w-24 md:h-24 bg-neutral-700 rounded-lg overflow-hidden flex-shrink-0 border border-neutral-600">
                         <img
                           src={item.image}
                           alt={item.name}
@@ -64,36 +64,36 @@ export default function CartPage() {
                       <div className="flex-1 min-w-0">
                         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 gap-2">
                           <div>
-                            <p className="text-xs text-neutral-500 uppercase tracking-wide font-semibold mb-1">
+                            <p className="text-xs text-primary-400 uppercase tracking-wide font-semibold mb-1">
                               {item.category}
                             </p>
-                            <h3 className="font-semibold text-neutral-900 line-clamp-2">{item.name}</h3>
+                            <h3 className="font-semibold text-neutral-100 line-clamp-2">{item.name}</h3>
                           </div>
-                          <p className="text-lg font-bold text-neutral-900 flex-shrink-0">${item.price}</p>
+                          <p className="text-lg font-bold text-primary-400 flex-shrink-0">₹{item.price}</p>
                         </div>
 
                         {/* Quantity Controls */}
                         <div className="flex items-center gap-3">
-                          <div className="flex items-center border border-neutral-300 rounded-lg">
+                          <div className="flex items-center border border-neutral-600 rounded-lg bg-neutral-700/50">
                             <button
                               onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                              className="p-1 text-neutral-600 hover:text-neutral-900 transition-colors"
+                              className="p-1 text-neutral-300 hover:text-primary-400 transition-colors"
                             >
                               <Minus size={16} />
                             </button>
-                            <span className="px-3 py-1 text-sm font-medium min-w-8 text-center">
+                            <span className="px-3 py-1 text-sm font-medium min-w-8 text-center text-neutral-200">
                               {item.quantity}
                             </span>
                             <button
                               onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                              className="p-1 text-neutral-600 hover:text-neutral-900 transition-colors"
+                              className="p-1 text-neutral-300 hover:text-primary-400 transition-colors"
                             >
                               <Plus size={16} />
                             </button>
                           </div>
                           <button
                             onClick={() => removeFromCart(item.id)}
-                            className="p-2 text-neutral-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors ml-auto"
+                            className="p-2 text-neutral-500 hover:text-secondary-400 hover:bg-secondary-500/20 rounded-lg transition-colors ml-auto"
                             title="Remove item"
                           >
                             <Trash2 size={18} />
@@ -101,8 +101,8 @@ export default function CartPage() {
                         </div>
 
                         {/* Line Total */}
-                        <p className="text-sm text-neutral-600 mt-3">
-                          Subtotal: <span className="font-semibold text-neutral-900">${(item.price * item.quantity).toFixed(2)}</span>
+                        <p className="text-sm text-neutral-400 mt-3">
+                          Subtotal: <span className="font-semibold text-primary-400">₹{(item.price * item.quantity).toFixed(2)}</span>
                         </p>
                       </div>
                     </div>
