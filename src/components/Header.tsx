@@ -36,15 +36,15 @@ export default function Header() {
           {/* Cart Button */}
           <Link
             to="/cart"
-            className="relative flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-neutral-100 transition-colors"
+            className="relative flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-neutral-700 transition-colors"
           >
-            <ShoppingCart size={20} className="text-neutral-900" />
+            <ShoppingCart size={20} className="text-primary-400" />
             {cartCount > 0 && (
-              <span className="absolute top-1 right-1 bg-primary-600 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+              <span className="absolute top-1 right-1 bg-primary-500 text-neutral-900 text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-lg shadow-primary-500/50">
                 {cartCount}
               </span>
             )}
-            <span className="hidden sm:inline text-sm font-medium text-neutral-900">Cart</span>
+            <span className="hidden sm:inline text-sm font-medium text-neutral-50">Cart</span>
           </Link>
 
           {/* Mobile Menu Button */}
