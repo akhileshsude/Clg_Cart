@@ -318,15 +318,15 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="section-spacing bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-600 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-20 animate-shimmer">
           <div className={"absolute inset-0 bg-[url('data:image/svg+xml;utf8,<svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"20\" cy=\"20\" r=\"1\" fill=\"white\"/></svg>')] bg-repeat"}></div>
         </div>
         <div className="container-main text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neutral-900">Ready to Represent Your College?</h2>
-          <p className="text-lg text-neutral-800 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neutral-900 animate-slide-in-top">Ready to Represent Your College?</h2>
+          <p className="text-lg text-neutral-800 mb-8 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Join thousands of students already wearing their campus pride. Shop the full collection today.
           </p>
-          <Link to="#bestsellers" className="btn-primary bg-neutral-900 text-primary-400 hover:bg-neutral-800 shadow-xl shadow-primary-500/50">
+          <Link to="#bestsellers" className="btn-primary bg-neutral-900 text-primary-400 hover:bg-neutral-800 shadow-xl shadow-primary-500/50 inline-block animate-bounce-soft transition-all duration-300 hover:scale-110">
             Start Shopping
           </Link>
         </div>
