@@ -218,9 +218,9 @@ export default function HomePage() {
       {/* Bestsellers Section */}
       <section id="bestsellers" className="section-spacing bg-neutral-900">
         <div className="container-main">
-          <div className="mb-12">
+          <div className="mb-12 animate-fade-in-up">
             <div className="flex items-center gap-2 mb-3">
-              <TrendingUp size={20} className="text-primary-400" />
+              <TrendingUp size={20} className="text-primary-400 animate-bounce-soft" />
               <span className="text-sm font-bold text-primary-400 uppercase tracking-wide">Trending Now</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-neutral-100 to-neutral-300 bg-clip-text text-transparent mb-3">Bestsellers</h2>
