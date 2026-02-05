@@ -238,15 +238,18 @@ export default function HomePage() {
       </section>
 
       {/* Limited Time Sale Section */}
-      <section id="sale" className="section-spacing bg-white">
-        <div className="container-main">
+      <section id="sale" className="section-spacing bg-gradient-to-b from-neutral-800 to-neutral-900 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-secondary-500/10 rounded-full blur-3xl animate-pulse"></div>
+        </div>
+        <div className="container-main relative z-10">
           <div className="mb-12">
             <div className="flex items-center gap-2 mb-3">
-              <Flame size={20} className="text-red-600" />
-              <span className="text-sm font-bold text-red-600 uppercase tracking-wide">Flash Sale</span>
+              <Flame size={20} className="text-secondary-400" />
+              <span className="text-sm font-bold text-secondary-400 uppercase tracking-wide">Flash Sale</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-3">Limited Time Offers</h2>
-            <p className="text-neutral-600 text-lg max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-secondary-300 to-secondary-500 bg-clip-text text-transparent mb-3">Limited Time Offers</h2>
+            <p className="text-neutral-400 text-lg max-w-2xl">
               Incredible deals for a limited time only. Grab your favorites before they're gone!
             </p>
           </div>
