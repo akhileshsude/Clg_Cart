@@ -301,7 +301,7 @@ export default function HomePage() {
       {/* Stationery Section */}
       <section className="section-spacing bg-neutral-900">
         <div className="container-main">
-          <div className="mb-12">
+          <div className="mb-12 animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-neutral-100 to-neutral-300 bg-clip-text text-transparent mb-3">Stationery & Study Gear</h2>
             <p className="text-neutral-400 text-lg max-w-2xl">
               Stay organized and focused with our college-themed stationery collection. Perfect for studying in style.
