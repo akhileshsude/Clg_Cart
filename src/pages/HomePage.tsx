@@ -265,7 +265,7 @@ export default function HomePage() {
       {/* Clothing Section */}
       <section className="section-spacing bg-neutral-900">
         <div className="container-main">
-          <div className="mb-12">
+          <div className="mb-12 animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-neutral-100 to-neutral-300 bg-clip-text text-transparent mb-3">Clothing</h2>
             <p className="text-neutral-400 text-lg max-w-2xl">
               Comfortable and stylish apparel for every season. From hoodies to joggers, we've got you covered.
