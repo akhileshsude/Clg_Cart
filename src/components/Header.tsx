@@ -22,13 +22,13 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link to="/" className="text-neutral-700 hover:text-primary-600 transition-colors font-medium">
+            <Link to="/" className="text-neutral-300 hover:text-primary-400 transition-colors font-medium">
               Shop
             </Link>
-            <a href="#bestsellers" className="text-neutral-700 hover:text-primary-600 transition-colors font-medium">
+            <a href="#bestsellers" className="text-neutral-300 hover:text-primary-400 transition-colors font-medium">
               Bestsellers
             </a>
-            <a href="#sale" className="text-neutral-700 hover:text-primary-600 transition-colors font-medium">
+            <a href="#sale" className="text-neutral-300 hover:text-primary-400 transition-colors font-medium">
               Sale
             </a>
           </nav>
