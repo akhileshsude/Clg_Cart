@@ -24,16 +24,16 @@ export default function ProductCard({ id, name, price, image, category, badge }:
   }
 
   return (
-    <div className="card group cursor-pointer hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+    <div className="card group cursor-pointer hover:shadow-2xl hover:shadow-primary-500/20 transition-all duration-300 h-full flex flex-col hover:border-primary-500/50">
       {/* Image Container */}
-      <div className="relative overflow-hidden bg-neutral-100 aspect-square">
+      <div className="relative overflow-hidden bg-neutral-700 aspect-square">
         <img
           src={image}
           alt={name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
         {badge && (
-          <div className="absolute top-3 right-3 bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+          <div className="absolute top-3 right-3 bg-gradient-to-r from-primary-500 to-primary-600 text-neutral-900 px-3 py-1 rounded-full text-xs font-bold shadow-lg shadow-primary-500/50">
             {badge}
           </div>
         )}
@@ -41,12 +41,12 @@ export default function ProductCard({ id, name, price, image, category, badge }:
 
       {/* Content */}
       <div className="p-4 flex flex-col flex-1">
-        <p className="text-xs text-neutral-500 uppercase tracking-wide font-semibold mb-1">{category}</p>
-        <h3 className="font-semibold text-neutral-900 mb-2 line-clamp-2">{name}</h3>
-        
-        <div className="mt-auto pt-3 border-t border-neutral-100">
+        <p className="text-xs text-primary-400 uppercase tracking-wide font-semibold mb-1">{category}</p>
+        <h3 className="font-semibold text-neutral-100 mb-2 line-clamp-2">{name}</h3>
+
+        <div className="mt-auto pt-3 border-t border-neutral-700">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-lg font-bold text-neutral-900">${price}</span>
+            <span className="text-lg font-bold text-primary-400">₹{price}</span>
           </div>
           <button
             onClick={handleAddToCart}
