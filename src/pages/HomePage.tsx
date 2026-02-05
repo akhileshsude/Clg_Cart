@@ -164,25 +164,31 @@ const stationery = [
 
 export default function HomePage() {
   return (
-    <main className="bg-neutral-50">
+    <main className="bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
       {/* Hero Section */}
-      <section className="section-spacing bg-gradient-to-br from-primary-600 to-primary-800 text-white">
-        <div className="container-main">
+      <section className="section-spacing bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 relative overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-primary-600/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary-600/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        </div>
+
+        <div className="container-main relative z-10">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Hero Text */}
             <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 text-balance bg-gradient-to-r from-primary-300 to-primary-500 bg-clip-text text-transparent">
                 Your College Style Starts Here
               </h1>
-              <p className="text-lg md:text-xl text-primary-100 mb-8 text-balance">
-                Premium hoodies, tees, and accessories designed for college life. Express your campus pride with quality merch.
+              <p className="text-lg md:text-xl text-neutral-300 mb-8 text-balance">
+                Premium hoodies, tees, and accessories designed for tech-savvy college students. Express your campus pride with quality merch.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="#bestsellers" className="btn-primary bg-white text-primary-600 hover:bg-primary-50 flex items-center justify-center gap-2">
+                <Link to="#bestsellers" className="btn-primary bg-gradient-to-r from-primary-500 to-primary-600 text-neutral-900 hover:from-primary-400 hover:to-primary-500 shadow-lg shadow-primary-500/50 flex items-center justify-center gap-2">
                   Shop Now
                   <ArrowRight size={18} />
                 </Link>
-                <a href="#sale" className="btn-secondary bg-primary-700 text-white border-primary-700 hover:bg-primary-600 flex items-center justify-center gap-2">
+                <a href="#sale" className="btn-secondary bg-secondary-600/20 text-secondary-300 border-secondary-500/50 hover:bg-secondary-600/30 flex items-center justify-center gap-2">
                   View Sale
                   <Flame size={18} />
                 </a>
@@ -192,16 +198,16 @@ export default function HomePage() {
             {/* Hero Image */}
             <div className="hidden md:block">
               <div className="relative">
-                <div className="bg-gradient-to-br from-primary-400 to-primary-600 rounded-3xl overflow-hidden aspect-square">
+                <div className="bg-gradient-to-br from-primary-500/20 to-secondary-600/20 rounded-3xl overflow-hidden aspect-square border border-primary-500/30 shadow-2xl shadow-primary-500/20 backdrop-blur-sm">
                   <img
                     src="https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=600&h=600&fit=crop"
                     alt="College Hoodie"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-4 -right-4 bg-yellow-400 rounded-2xl px-6 py-3 shadow-lg">
+                <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl px-6 py-3 shadow-xl shadow-primary-500/50 border border-primary-400/50">
                   <p className="font-bold text-lg text-neutral-900">30% OFF</p>
-                  <p className="text-sm text-neutral-700">Limited Time</p>
+                  <p className="text-sm text-neutral-800">Limited Time</p>
                 </div>
               </div>
             </div>
