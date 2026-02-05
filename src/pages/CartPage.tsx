@@ -113,7 +113,7 @@ export default function CartPage() {
               {/* Clear Cart Button */}
               <button
                 onClick={clearCart}
-                className="mt-4 text-sm text-neutral-600 hover:text-red-600 transition-colors font-medium"
+                className="mt-4 text-sm text-neutral-400 hover:text-secondary-400 transition-colors font-medium"
               >
                 Clear Cart
               </button>
@@ -121,27 +121,27 @@ export default function CartPage() {
 
             {/* Order Summary */}
             <div className="lg:col-span-1">
-              <div className="card sticky top-24 p-6">
-                <h2 className="text-lg font-bold text-neutral-900 mb-6">Order Summary</h2>
+              <div className="card sticky top-24 p-6 border-primary-500/30">
+                <h2 className="text-lg font-bold text-neutral-100 mb-6">Order Summary</h2>
 
-                <div className="space-y-4 mb-6 pb-6 border-b border-neutral-200">
+                <div className="space-y-4 mb-6 pb-6 border-b border-neutral-700">
                   <div className="flex justify-between text-sm">
-                    <span className="text-neutral-600">Subtotal ({items.length} items)</span>
-                    <span className="font-medium text-neutral-900">${cartTotal.toFixed(2)}</span>
+                    <span className="text-neutral-400">Subtotal ({items.length} items)</span>
+                    <span className="font-medium text-neutral-200">₹{cartTotal.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-neutral-600">Shipping</span>
-                    <span className="font-medium text-neutral-900">Free</span>
+                    <span className="text-neutral-400">Shipping</span>
+                    <span className="font-medium text-neutral-200">Free</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-neutral-600">Tax (estimated)</span>
-                    <span className="font-medium text-neutral-900">${(cartTotal * 0.08).toFixed(2)}</span>
+                    <span className="text-neutral-400">Tax (estimated)</span>
+                    <span className="font-medium text-neutral-200">₹{(cartTotal * 0.08).toFixed(2)}</span>
                   </div>
                 </div>
 
                 <div className="flex justify-between mb-6">
-                  <span className="font-bold text-neutral-900">Total</span>
-                  <span className="text-2xl font-bold text-primary-600">${(cartTotal * 1.08).toFixed(2)}</span>
+                  <span className="font-bold text-neutral-100">Total</span>
+                  <span className="text-2xl font-bold text-primary-400">₹{(cartTotal * 1.08).toFixed(2)}</span>
                 </div>
 
                 <button className="btn-primary w-full mb-3 flex items-center justify-center gap-2">
