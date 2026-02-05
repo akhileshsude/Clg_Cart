@@ -216,15 +216,15 @@ export default function HomePage() {
       </section>
 
       {/* Bestsellers Section */}
-      <section id="bestsellers" className="section-spacing">
+      <section id="bestsellers" className="section-spacing bg-neutral-900">
         <div className="container-main">
           <div className="mb-12">
             <div className="flex items-center gap-2 mb-3">
-              <TrendingUp size={20} className="text-primary-600" />
-              <span className="text-sm font-bold text-primary-600 uppercase tracking-wide">Trending Now</span>
+              <TrendingUp size={20} className="text-primary-400" />
+              <span className="text-sm font-bold text-primary-400 uppercase tracking-wide">Trending Now</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-3">Bestsellers</h2>
-            <p className="text-neutral-600 text-lg max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-neutral-100 to-neutral-300 bg-clip-text text-transparent mb-3">Bestsellers</h2>
+            <p className="text-neutral-400 text-lg max-w-2xl">
               The most loved items by college students across the country. Don't miss out on these fan favorites.
             </p>
           </div>
