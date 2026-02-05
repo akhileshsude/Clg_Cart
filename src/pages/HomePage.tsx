@@ -281,11 +281,11 @@ export default function HomePage() {
       </section>
 
       {/* Accessories Section */}
-      <section className="section-spacing bg-white">
+      <section className="section-spacing bg-gradient-to-b from-neutral-800 to-neutral-900">
         <div className="container-main">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-3">Accessories</h2>
-            <p className="text-neutral-600 text-lg max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-300 to-primary-500 bg-clip-text text-transparent mb-3">Accessories</h2>
+            <p className="text-neutral-400 text-lg max-w-2xl">
               Complete your look with our curated selection of college accessories. Quality that lasts.
             </p>
           </div>
